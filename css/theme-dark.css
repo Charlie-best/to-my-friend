@@ -1,0 +1,16 @@
+body.theme-dark {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+/* 为不同页面设置专属背景 */
+.bg-invitation { background-image: url('../invitation_bg.jpg'); }
+.bg-resources { background-image: url('../resources_bg.jpg'); }
+
+.page::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(13, 17, 23, 0.75);
+    z-index: -1;
+}
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4 { color: #f0f6fc; }
+.theme-dark .highlight { color: #fbbf24; font-weight: 700; }
+.theme-dark .nav-link.active { color: #fcd34d; border-bottom-color: #fcd34d; }

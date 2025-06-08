@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麓珈的迷航与星尘</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 引入全局骨架样式 -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- 这是一个“插座”，用来动态加载特定页面的主题样式 -->
+    <link id="page-theme-stylesheet" rel="stylesheet" href="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部固定导航栏 -->
+    <header id="navbar" class="navbar fixed top-0 left-0 right-0 z-10 p-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <nav id="nav-menu" class="flex flex-wrap justify-center space-x-3 md:space-x-6 text-sm md:text-base bg-gray-900 bg-opacity-50 px-6 py-2 rounded-full border border-gray-700">
+                <a onclick="loadPage('home')" class="nav-link active">首页</a>
+                <a onclick="loadPage('invitation')" class="nav-link">致迷航者</a>
+                <a onclick="loadPage('passion')" class="nav-link">专业与热爱</a>
+                <a onclick="loadPage('wilderness')" class="nav-link">大学旷野</a>
+                <a onclick="loadPage('resources')" class="nav-link">精神食粮</a>
+                <a onclick="loadPage('memories')" class="nav-link">高中回忆</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主体内容容器 -->
+    <main id="main-content">
+        <!-- 内容将由 JavaScript 动态载入 -->
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>

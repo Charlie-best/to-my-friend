@@ -1,0 +1,16 @@
+body.theme-white {
+    color: #374151; /* 深灰色文字 */
+}
+.page {
+    background-image: url('../memories_bg.jpg');
+}
+.page::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    /* 关键：使用非常淡的灰色遮罩，既能提亮背景，又能让深色文字易读 */
+    background-color: rgba(243, 244, 246, 0.65); 
+    z-index: -1;
+}
+.theme-white h1, .theme-white h2, .theme-white h3, .theme-white h4 { color: #111827; }
+.theme-white .text-gray-400 { color: #4b5563; }
+.theme-white .highlight { color: #b91c1c; font-weight: 700; /* 使用醒目的红色 */ }
+.theme-white .nav-link.active { color: #b91c1c; border-bottom-color: #b91c1c; }

@@ -1,0 +1,15 @@
+body.theme-summer {
+    color: #0c4a6e; /* 深青蓝色文字 */
+}
+.page {
+    background-image: url('../home_bg.jpg');
+}
+.page::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(14, 165, 233, 0.25), rgba(2, 132, 199, 0.45));
+    z-index: -1;
+}
+.theme-summer h1, .theme-summer h2, .theme-summer h3, .theme-summer h4 { color: #f0f9ff; }
+.theme-summer p { color: #e0f2fe; }
+.theme-summer .text-gray-400 { color: #a5f3fc; }
+.theme-summer .nav-link.active { color: #7dd3fc; border-bottom-color: #7dd3fc; }

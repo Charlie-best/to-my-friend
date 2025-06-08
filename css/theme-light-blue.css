@@ -1,0 +1,15 @@
+body.theme-light-blue {
+    color: #1e3a8a; /* 深蓝色文字 */
+}
+.bg-passion { background-image: url('../passion_bg.jpg'); }
+.bg-wilderness { background-image: url('../wilderness_bg.jpg'); }
+
+.page::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(219, 234, 254, 0.55); /* 半透明浅蓝色遮罩 */
+    z-index: -1;
+}
+.theme-light-blue h1, .theme-light-blue h2, .theme-light-blue h3, .theme-light-blue h4 { color: #1e3a8a; }
+.theme-light-blue .text-gray-400 { color: #374151; }
+.theme-light-blue .highlight { color: #2563eb; font-weight: 700; }
+.theme-light-blue .nav-link.active { color: #2563eb; border-bottom-color: #2563eb; }
