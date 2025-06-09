@@ -1,0 +1,29 @@
+<section id="page-community" class="page">
+    <div class="container mx-auto max-w-4xl px-4 text-center">
+        <h2 class="text-4xl md:text-5xl mb-4 tracking-wider">畅所欲言</h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-16 max-w-3xl mx-auto">
+            这里是一个完全属于你们的地方。
+            <br>
+            无论是关于未来的困惑、对大学生活的好奇，还是想分享一个故事，或只是简单地打个招呼，都欢迎你在此留下痕迹。
+            <br>
+            <span class="highlight">可以匿名，邮箱也可以瞎填。</span>
+        </p>
+
+        <div id="tcomment" class="text-left"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js"></script>
+    <script>
+    // 这个脚本会在 community.html 被加载时执行
+    // 它会找到页面中 id="tcomment" 的容器，并在其中渲染出评论区
+    twikoo.init({
+        /**
+         * 重要！
+         * 请将下面的网址替换成你在第一步中部署好的 Vercel 服务地址
+         */
+        envId: 'https://twikoo-backend-six.vercel.app/', // 例如: 'https://your-name.vercel.app'
+        el: '#tcomment', // 挂载的元素
+        // lang: 'zh-CN', // 可选：语言，默认中文
+    });
+    </script>
+</section>
