@@ -2,7 +2,7 @@ body.theme-white {
     color: #374151; /* 深灰色文字 */
 }
 .page {
-    background-image: url('../memories_bg.jpg');
+    background-image: url('../images/memories_bg.jpg');
 }
 .page::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;

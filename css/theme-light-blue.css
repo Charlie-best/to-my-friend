@@ -1,8 +1,8 @@
 body.theme-light-blue {
     color: #1e3a8a; /* 深蓝色文字 */
 }
-.bg-passion { background-image: url('../passion_bg.jpg'); }
-.bg-wilderness { background-image: url('../wilderness_bg.jpg'); }
+.bg-passion { background-image: url('../images/passion_bg.jpg'); }
+.bg-wilderness { background-image: url('../images/wilderness_bg.jpg'); }
 
 /* 全局遮罩层 */
 .page::before {

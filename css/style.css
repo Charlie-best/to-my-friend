@@ -54,3 +54,24 @@ p, li {
     text-align: justify;
 }
 .poem-block p { text-align: center; }
+
+/* 新增的图片样式 */
+.article-image {
+    margin-top: 2rem;      /* 图片与上方段落的距离 */
+    margin-bottom: 2rem;   /* 图片与下方段落的距离 */
+    text-align: center;    /* 让内部的图片和文字都居中 */
+}
+
+.article-image img {
+    max-width: 100%;       /* 确保图片不会撑破手机等小屏幕的宽度 */
+    height: auto;          /* 保持图片的原始长宽比例 */
+    border-radius: 8px;    /* 给图片加上一点圆角，看起来更柔和 */
+    display: inline-block; /* 这是为了让 text-align: center 生效 */
+}
+
+.article-image figcaption {
+    margin-top: 0.5rem;    /* 图片说明与图片的间距 */
+    font-size: 0.9rem;     /* 图片说明的字号，比正文小一些 */
+    color: #6b7280;        /* 图片说明的文字颜色，用了一个比较柔和的灰色 */
+    font-style: italic;    /* 斜体显示 */
+}

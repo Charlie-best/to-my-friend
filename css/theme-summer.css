@@ -2,7 +2,7 @@ body.theme-summer {
     color: #0c4a6e; /* 深青蓝色文字 */
 }
 .page {
-    background-image: url('../home_bg.jpg');
+    background-image: url('../images/home_bg.jpg');
 }
 .page::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;

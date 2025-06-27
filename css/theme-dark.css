@@ -3,8 +3,8 @@ body.theme-dark {
     color: #c9d1d9;
 }
 /* 为不同页面设置专属背景 */
-.bg-invitation { background-image: url('../invitation_bg.jpg'); }
-.bg-resources { background-image: url('../resources_bg.jpg'); }
+.bg-invitation { background-image: url('../images/invitation_bg.jpg'); }
+.bg-resources { background-image: url('../images/resources_bg.jpg'); }
 
 .page::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
