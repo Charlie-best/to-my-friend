@@ -14,3 +14,44 @@ body.theme-dark {
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4 { color: #f0f6fc; }
 .theme-dark .highlight { color: #fbbf24; font-weight: 700; }
 .theme-dark .nav-link.active { color: #fcd34d; border-bottom-color: #fcd34d; }
+
+/* --- "邀请函"板块专属卡片样式 --- */
+.theme-dark .speech-card {
+    background-color: rgba(31, 41, 55, 0.4); /* 半透明深灰色背景 */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(75, 85, 99, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.theme-dark .speech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(251, 191, 36, 0.15); /* 悬浮时带一点点高亮颜色 */
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.theme-dark .speech-card h3 {
+    color: #fde68a; /* 温暖的黄色标题 */
+}
+
+.theme-dark .speech-card .text-gray-600 {
+    color: #9ca3af; /* 稍浅的灰色描述文字 */
+}
+
+.theme-dark .speech-card .cta-button {
+    font-weight: bold;
+    background-color: rgba(251, 191, 36, 0.1);
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    transition: all 0.3s ease;
+}
+
+.theme-dark .speech-card .cta-button:hover {
+    background-color: #fbbf24;
+    color: #111827;
+}
+
+/* 诗歌页面段落的特殊处理 */
+.theme-dark .poem-block p {
+  text-align: center;
+}

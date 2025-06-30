@@ -1,11 +1,4 @@
 <!-- 
-    你好，麓珈！
-    这是 invitation.html 的更新版本。
-    我已经按照你的要求，将内容替换回了最初那个更长的、分段的现代诗版本。
-    它依然是一个“内容片段”，可以被主页完美地加载。
--->
-
-<!-- 
     我们用一个 <section> 包裹所有内容。
     - id="page-invitation" 是它的唯一标识。
     - class="page" 定义了它作为一个页面的基本样式。
@@ -17,120 +10,89 @@
           让内容居中，并设置了最大宽度和左右内边距，确保在各种屏幕上都好看。
         - class="text-center": 让容器内的所有文字默认居中。
      -->
-    <div class="container mx-auto max-w-4xl px-4 text-center">
+     <div class="container mx-auto max-w-4xl px-4">
+        <h2 class="text-4xl md:text-5xl mb-4 tracking-wider text-center">致迷航者</h2>
+        <p class="text-lg md:text-xl text-gray-200 mb-16 max-w-2xl mx-auto text-center">
+            得益于Gemini百万token的上下文，我可以把过去一年的日记喂给它，让它据此写一首现代诗（没有设计prompt），主题是鼓励大家迷茫、探索自我。我本来只想在网站中放最初版本，后来觉得让AI发挥下想象力多写几版挺好玩的。以下除了第三个均为Gemini的作品，我几乎没修改。
+        </p>
+        <div class="space-y-10">
+            
+            <a onclick="loadPage('invitation_1')" class="speech-card block cursor-pointer text-left p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">初代</h3>
+                    <p class="mb-4 text-gray-600">
+                        来自旷野的邀请函。
+                    </p>
+                    <span class="cta-button p-2 rounded-md">阅读 &rarr;</span>
+            </a>
+            
+            <a onclick="loadPage('invitation_2')" class="speech-card block cursor-pointer text-left p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">初代的修改</h3>
+                    <p class="mb-4 text-gray-600">
+                        让Gemini给初代提建议，然后修改。
+                    </p>
+                    <span class="cta-button p-2 rounded-md">阅读 &rarr;</span>
+            </a>
 
-        <!-- Section 1: The Shore -->
-        <div class="mb-16"> <!-- mb-24: 增加与下一部分的间距 -->
-            <h2 class="text-4xl md:text-5xl mb-4 tracking-wider">致迷航者</h2>
-            <h3 class="text-xl md:text-2xl text-gray-400 mb-10 tracking-widest">一封来自旷野的邀请函(Gemini 2.5 Pro)</h3>
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                朋友们，
-                <br>
-                高考的硝烟已经散去，你们站在一片新的海岸上。
-                <br>
-                一年前，我也站在这里，曾以为海的对岸是清晰的彼岸。
-                <br>
-                后来才发现，那是一片更广阔、更值得探索的旷野。
-                <br>
-                我无法为你画出海图，因为每个人的航路都注定独一无二。
-                <br>
-                我只想告诉你：请允许自己，甚至，<span class="highlight text-2xl">请勇敢地迷航。</span>
-            </p>
-        </div>
+            <a onclick="loadPage('invitation_3')" class="speech-card block cursor-pointer text-left p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">DS版本</h3>
+                <p class="mb-4 text-gray-600">
+                    我把初代给DS，让它融合毛泽东式豪情和烟火气（真实感）。我反正是笑出声了。
+                </p>
+                <span class="cta-button p-2 rounded-md">阅读 &rarr;</span>
+            </a>
 
-        <!-- Section 2: The Fog -->
-        <div class="mb-16">
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                你将感到迷茫。
-                <br>
-                你会看到身边的人都在奔跑，却不知自己的方向在何方。
-                <br>
-                会为一个艰深的难题彻夜不眠，也会在喧嚣的人群中感到格格不入。
-                <br>
-                你会怀疑过去，会畏惧未来。
-                <br>
-                这很好。真的。
-                <br>
-                因为，<span class="highlight text-xl block my-3 tracking-widest">大学，不迷茫才是堕落的标志。</span>
-                <br>
-                迷茫意味着你没有安于被给予的答案，你在探索，在挣扎，在用力地生活。
-            </p>
-        </div>
+            <a onclick="loadPage('invitation_4')" class="speech-card block cursor-pointer text-left p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">物理诗</h3>
+                <p class="mb-4 text-gray-600">
+                    公理+推论。它对物理概念的理解和应用虽然不至于完美和精准，但足够了，我就不再push它。
+                </p>
+                <span class="cta-button p-2 rounded-md">阅读 &rarr;</span>
+            </a>
 
-        <!-- Section 3: The Compass -->
-        <div class="mb-16">
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                你的方向，不在课程表上，不在社团名录里，也不在他人的建议中。
-                <br>
-                它可能藏在一场酣畅淋漓的球赛里，在与挚友深夜的清谈中；
-                <br>
-                在一本偶然翻开的、与专业无关的书中，在一首让你突然安静的歌里；
-                <br>
-                在一段独自行走时吹过的晚风里，在你为世界的某处不公而升起的愤慨里。
-                <br>
-                那些<span class="highlight">“无用之事”</span>，正是你内心的罗盘校准自己的时刻。
-            </p>
-        </div>
+            <a onclick="loadPage('invitation_5')" class="speech-card block cursor-pointer text-left p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">忧郁文青</h3>
+                <p class="mb-4 text-gray-600">如题</p>
+                <span class="cta-button p-2 rounded-md">阅读 &rarr;</span>
+            </a>
 
-        <!-- Section 4: The Stars -->
-        <div class="mb-16">
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                你将遇到很多人。
-                <br>
-                有些人会成为你航程中的灯塔，有些人只是短暂交汇的流星。
-                <br>
-                珍惜那些能与你讨论星辰大海，也能陪你忍受漫长沉默的同伴。
-                <br>
-                我无法成为你们所有人的灯塔，但希望这封信，能成为一束微弱的星光，
-                <br>
-                告诉你，在这片广阔的海上，<span class="highlight">你并不孤独</span>。
-            </p>
-        </div>
-
-        <!-- Section 5: The Open Sea -->
-        <div>
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                所以，朋友们，去吧。
-                <br>
-                去犯错，去走弯路，去爱上一些无用之事，去在深夜里痛苦，去在阳光下大笑。
-                <br>
-                你的大学四年，不应是一张被填满的地图，而应是一片由你亲自踏足而变得丰富的旷野。
-                <br>
-                我也依然迷茫，但没关系。
-                <br>
-                <span class="highlight text-xl">我们都在这片海上。</span>
-            </p>
         </div>
     </div>
-    <div class="border-t border-gray-700 max-w-2xl mx-auto my-8"></div>
+
+    <div class="border-t border-gray-700 max-w-2xl mx-auto my-10"></div>
     <div class="max-w-3xl mx-auto text-left">
-    <h2 class="text-3xl md:text-4xl mb-4 font-bold">不要害怕迷茫</h2>
-    <p class="text-lg text-gray-400 mb-6">杨麓珈 | 2025盛夏</p>
-    <div class="text-lg space-y-6 text-gray-300 leading-relaxed">
-      <p>
-        上面那首诗已经把精神传达到了（可以顺带看看AI的实力，我觉得还没完全发挥出来，我没设计prompt），再做一点说明。
-      </p>
-      <p>
-        矛盾是发展的引擎。举个例子，反叛与流行的张力是文化的引擎。反叛，作为对规范的否定而出现；流行，则通过吸收、改造甚至商品化反叛来维持其主导地位。这是一个创造新文化形态的、永不停止的循环。只要社会存在不满与变革的渴望，新的反叛就会不断涌现，而流行文化也将继续其吸收与改造的循环。
-      </p>
-      <p>
-        在个体层面，新观念、新环境不断挑战旧有自我。这种矛盾常体现为迷茫。迷茫酝酿着认知革命。
-      </p>
-      <p>
-        上了大学，你们会发现，身边有不少比你更优秀、更努力，或者目标更清晰的人。你们也会发现，很多课程是无聊的，很多活动是形式主义的。那么，我是谁？我从哪里来？更重要的，未来我要怎样？不迷茫几乎不可能。如前述，不要害怕迷茫。我认同这样一种说法，本科四年就是要去找你愿意为之奋斗终生的事业，如果你做到了，就比你所在学校的绝大多数同学都成功了。
-      </p>
-      <p>
-        但迷茫也要适度，正如长时间的失重使人崩溃。我希望，朋友们，健康地迷茫，内心安宁地迷茫。
-      </p>
-      <p>
-        那怎样算是健康地迷茫？答案因人而异。但健康不健康，你的内心不会欺骗你。
-      </p>
-      <p>
-        找到一个平衡，不要急于抓住一个确定的答案而浅尝辄止，那只会更加混乱；也不要因为恐惧未知和变化，而永远停留在舒适区。带着迷茫去探索吧。迷茫不是终点，终点是热爱吗？我不知道，但答案在路上。
-      </p>
-      <p class="text-sm max-w-3xl mx-auto mb-3 text-gray-200">
-        P.S. 不同专业迷茫的内容和程度不同，这里以物理学和医学为例。医学职业路径单一，而物理学的职业道路是发散的，它指向广阔的可能性，但也因此充满了不确定性，使人迷茫。然而，地图的清晰不等于行路人内心的笃定。医学生同样会面对迷茫：比如关于行医意义、生死的困惑。清晰的路径掩盖了这种内在的迷茫，让人无暇自问。毫无疑问，学生时代，医学生的迷茫比物理学徒的迷茫少很多，但它可能在未来爆发。
-      </p>
-    </div>
+      <h2 class="text-3xl md:text-4xl mb-4 font-bold">不要害怕迷茫</h2>
+      <p class="text-lg text-gray-400 mb-6">杨麓珈 | 2025年6月中下旬</p>
+      <div class="text-lg space-y-6 text-gray-300 leading-relaxed">
+        <p>
+          上面的诗已经把精神传达到了（可以顺带看看AI的实力，我觉得还没完全发挥出来，毕竟我没设计prompt），再做一点说明。
+        </p>
+        <p>
+          矛盾是发展的引擎（例如，反叛与流行的张力是文化的引擎）。在个体层面，新观念、新环境不断挑战旧有自我。这种矛盾常体现为迷茫。迷茫酝酿着认知革命。
+        </p>
+        <p>
+          上了大学，你们会发现，身边有不少比你更优秀、更努力，或者目标更清晰的人。你们也会发现，很多课程是无聊的，很多活动是形式主义的。那么，我是谁？我从哪里来？更重要的，未来我要怎样？不迷茫几乎不可能。如前述，不要害怕迷茫。我认同这样一种说法，本科四年就是要去找你的人生目标。如果你做到了，就比你所在学校的绝大多数同学都成功（或者说，幸福）了。
+        </p>
+        <p>
+          但迷茫也要适度，正如长时间的失重使人崩溃。我希望，朋友们，健康地迷茫，内心安宁地迷茫。
+        </p>
+        <p>
+          那怎样算是健康地迷茫？答案因人而异。但健康不健康，你的内心不会欺骗你。
+        </p>
+        <p>
+          找到一个平衡，不要急于抓住一个确定的答案而浅尝辄止，那是一种妥协；也不要因为恐惧未知和变化，而永远停留在舒适区。带着迷茫去探索吧。迷茫不是终点，终点是热爱吗？是责任吗？我不知道，但答案在路上。
+        </p>
+        <p>
+          当然，如果你非常非常非常幸运，很快（或已经）找到本科甚至是人生的目标（注意，目标不等于幻想），那么毫无疑问，向着目标前进吧！祝福你！另外，这个网站你没必要看了。
+        </p>
+        <p>
+          最后，用袁朗对成才说的一句话结束：
+        </p>
+        <p>
+          你们想知道，我和你们一样大的时候，最像你们三个中的谁吗？是你，成才。比吴哲更专心，比你成才更知道自己想要什么。你的路还很长，成才，比许三多要长的多。同时你的迷茫要比他多得多。如果这是你的路，你愿意来老A吗？
+        </p>
+        <p class="text-sm max-w-3xl mx-auto mb-3 text-gray-200">
+          P.S.（本科期间）不同专业迷茫的程度不同，例如物理>计算机>医学。
+        </p>
+      </div>
   </div>
 </section>
